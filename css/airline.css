@@ -32,9 +32,31 @@ label{
 .myform{
     font-size: 1.4rem;
 }
-.icon-hover:hover{
-    border-color: rgb(138,138,138);
+#but1{
+    background: #ffffff;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    margin: 1%;
+    margin-left: 45%;
 }
+#but1:hover{
+    background:maroon;
+    color: #ffffff;
+}
+
+#but{
+    background: #ffffff00;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 1%;
+}
+#but:hover{
+    background:rgb(255, 255, 255);
+    color: maroon;
+}
+
 @media only screen and (max-width: 1000px) {
     .parent{
         width: 90vw;
@@ -47,4 +69,5 @@ label{
         font-size: 120%;
     }
   } 
+  
   

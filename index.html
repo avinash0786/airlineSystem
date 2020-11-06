@@ -22,14 +22,15 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="./css/airline.css">
+      <script src="./script/airline.js"></script>
 
 
 </head>
 <body style="background-color: #ffffff;"onload="myFunction()">
 <div id="loading" style="position: fixed;width: 90%;height: 90vh;background: #fff url("./images/inf.gif") no-repeat center; z-index: 9999"></div>
 
-<nav class="navbar sticky-top navbar-light navbar-expand-md shadow navigation-clean">
-    <div class="container"><img class="float-left" src="./images/Air.png" width="90px" height="30px" loading="lazy" style="margin-top: -14px;margin-left: 2px;margin-right: 22px;" /><a class="navbar-brand" href="#">Air india</a><button data-toggle="collapse" data-target="#navcol-1"
+<nav class="navbar navbar-light navbar-expand-md sticky-top shadow navigation-clean" style="background: rgba(255,255,255,0.85);">
+  <div class="container"><img class="float-left" src="./images/Air.png" width="90px" height="30px" loading="lazy" style="margin-top: -14px;margin-left: 2px;margin-right: 22px;" /><a class="navbar-brand" href="#">Air india</a><button data-toggle="collapse" data-target="#navcol-1"
             class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
@@ -100,7 +101,7 @@
   </form>
 </div>
 <!-- Complement your journey -->
-<div class="container" style="margin-top: 2%;margin-left: 150px;">
+<div class="container" style="margin-top: 2%;margin-left: 100px;">
   <h1>Complement your Journey</h1>
   <h6 style="height: 1%;font-size: 14px;margin-top: -14px;margin-bottom: 7px;margin-left: 3px;color: rgb(111,115,119);"><br />Explore the additional services we offer to make your journey even more memorable.<br /><br /><br /></h6>
   <div class="d-flex" style="background: rgba(233,181,181,0);">
@@ -113,56 +114,163 @@
       <div style="background: rgba(255,255,255,0.69);margin-left: 7%;">
         <div class="icon-hover" style="padding: 13px;border-width: 7.4px;border-style: solid;border-radius: 130px;height: 114px;padding-left: 2px;color: rgba(255, 255, 255, 0);">
           <i class="fa fa-shopping-bag" style="font-size: 61px;color: rgb(144,148,151);margin: 0px;margin-right: 0px;margin-left: 15px;margin-top: 10px;padding-bottom: 12px;border-radius: 26px;border-width: 7.4px;border-style: none;padding-left: 4px;padding-right: 5px;"></i></div>
-          <p style="margin-bottom: 0px;margin-left: 4px;font-size: 19px;padding-left: 5px;">Excess </p>
-          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;">Baggeage </p>
+          <p style="margin-bottom: 0px;margin-left: 20px;font-size: 19px;padding-left: 5px;">Excess </p>
+          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;margin-left: 12px;">Baggeage </p>
       </div>
       <div style="background: rgba(255,255,255,0.69);margin-left: 7%;">
         <div class="icon-hover" style="padding: 13px;border-width: 7.4px;border-style: solid;border-radius: 130px;height: 114px;padding-left: 2px;color: rgba(255, 255, 255, 0);">
           <i class="fa fa-hotel" style="font-size: 61px;color: rgb(144,148,151);margin: 0px;margin-right: 0px;margin-left: 15px;margin-top: 10px;padding-bottom: 12px;border-radius: 26px;border-width: 7.4px;border-style: none;padding-left: 4px;padding-right: 5px;"></i></div>
-          <p style="margin-bottom: 0px;margin-left: 4px;font-size: 19px;padding-left: 5px;"> Lounge </p>
-          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;">Access </p>
+          <p style="margin-bottom: 0px;margin-left: 20px;font-size: 19px;padding-left: 5px;"> Lounge </p>
+          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;margin-left: 12px;">Access </p>
       </div>
       <div style="background: rgba(255,255,255,0.69);margin-left: 7%;">
         <div class="icon-hover" style="padding: 13px;border-width: 7.4px;border-style: solid;border-radius: 130px;height: 114px;padding-left: 2px;color: rgba(255, 255, 255, 0);">
           <i class="fa fa-home" style="font-size: 61px;color: rgb(144,148,151);margin: 0px;margin-right: 0px;margin-left: 15px;margin-top: 10px;padding-bottom: 12px;border-radius: 26px;border-width: 7.4px;border-style: none;padding-left: 4px;padding-right: 5px;"></i></div>
-          <p style="margin-bottom: 0px;margin-left: 4px;font-size: 19px;padding-left: 5px;">Airport </p>
-          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;">Hotel </p>
+          <p style="margin-bottom: 0px;margin-left: 20px;font-size: 19px;padding-left: 5px;">Airport </p>
+          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;margin-left: 12px;">Hotel </p>
       </div>
       <div style="background: rgba(255,255,255,0.69);margin-left: 7%;">
         <div class="icon-hover" style="padding: 13px;border-width: 7.4px;border-style: solid;border-radius: 130px;height: 114px;padding-left: 2px;color: rgba(255, 255, 255, 0);">
           <i class="fa fa-road" style="font-size: 61px;color: rgb(144,148,151);margin: 0px;margin-right: 0px;margin-left: 15px;margin-top: 10px;padding-bottom: 12px;border-radius: 26px;border-width: 7.4px;border-style: none;padding-left: 4px;padding-right: 5px;"></i></div>
-          <p style="margin-bottom: 0px;margin-left: 4px;font-size: 19px;padding-left: 5px;">Air Maga </p>
-          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;">Service </p>
+          <p style="margin-bottom: 0px;margin-left: 20px;font-size: 19px;padding-left: 5px;">Air Maga </p>
+          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;margin-left: 12px;">Service </p>
       </div>
       <div style="background: rgba(255,255,255,0.69);margin-left: 7%;">
         <div class="icon-hover" style="padding: 13px;border-width: 7.4px;border-style: solid;border-radius: 130px;height: 114px;padding-left: 2px;color: rgba(255, 255, 255, 0);">
           <i class="fa fa-tags" style="font-size: 61px;color: rgb(144,148,151);margin: 0px;margin-right: 0px;margin-left: 15px;margin-top: 10px;padding-bottom: 12px;border-radius: 26px;border-width: 7.4px;border-style: none;padding-left: 4px;padding-right: 5px;"></i></div>
-          <p style="margin-bottom: 0px;margin-left: 4px;font-size: 19px;padding-left: 5px;">Hotel </p>
-          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;">Bookings </p>
+          <p style="margin-bottom: 0px;margin-left: 20px;font-size: 19px;padding-left: 5px;">Hotel </p>
+          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;margin-left: 12px;">Bookings </p>
       </div>
       <div style="background: rgba(255,255,255,0.69);margin-left: 7%;">
         <div class="icon-hover" style="padding: 13px;border-width: 7.4px;border-style: solid;border-radius: 130px;height: 114px;padding-left: 2px;color: rgba(255, 255, 255, 0);">
           <i class="fa fa-car" style="font-size: 61px;color: rgb(144,148,151);margin: 0px;margin-right: 0px;margin-left: 15px;margin-top: 10px;padding-bottom: 12px;border-radius: 26px;border-width: 7.4px;border-style: none;padding-left: 4px;padding-right: 5px;"></i></div>
-          <p style="margin-bottom: 0px;margin-left: 4px;font-size: 19px;padding-left: 5px;">Cars/Bike </p>
-          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;">Rental </p>
+          <p style="margin-bottom: 0px;margin-left: 20px;font-size: 19px;padding-left: 5px;">Cars/Bike </p>
+          <p class="text-center" style="margin-bottom: 0px;font-size: 20px;padding-left: 2px;margin-left: 12px;">Rental </p>
       </div>
   </div>
 </div>
 <!-- top location international -->
-<div id="international">
-    
+<div class="container shadow" style="margin-left: 13%;margin-top: 3%;width: 1140px;">
+  <h1>Our Latest Flight Deals</h1>
+  <div class="d-flex " style="background: #ffffff00;width: 100%; margin-bottom: 0.5%;">
+      <div class=" main1 d-flex align-items-xl-end" style="background: url('./images/Taj-Mahal-Delhi-India-1024x679.webp');width:272px;height: 400px;margin-left: 5px;background-size: 100% 400px;">
+        <div class="out1" style="background: #e0dddd81;width: 100%;height: 40%;padding: 5px;">
+          <h3 style="margin-bottom: 1px;color: rgb(255,255,255);">Taj Mahal</h3>
+          <p style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</p>
+          <p style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong> 69746</p>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div>
+      </div>
+      <div  class=" main2 d-flex align-items-xl-end" style="background: url('./images/amritsar.jpg');width:272px;height: 400px;margin-left: 5px;background-size: 100% 400px;">
+        <div class="out2" style="background: #bdb1119a;width: 100%;height: 40%;padding: 5px;">
+          <h3 style="margin-bottom: 1px;color: rgb(255,255,255);">Amritsar</h3>
+          <p style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</p>
+          <p style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong>56261</p>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+      <div  class=" main3 d-flex align-items-xl-end" style="background: url('./images/photo-1549991299-312b1a3276d9.jpg');width:272px;height: 400px;margin-left: 5px;;background-size: 100% 400px;">
+        <div class="out3" style="background: #88848493;width: 100%;height: 40%;padding: 5px;">
+          <h3 style="margin-bottom: 1px;color: rgb(255,255,255);">Kasachastan Astana</h3>
+          <p style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</p>
+          <p style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong>326498</p>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+      <div  class=" main4 d-flex align-items-xl-end" style="background: url('./images/photo-1513415564515-763d91423bdd.jpg');width:272px;height: 400px;margin-left: 5px;;background-size: 100% 400px;">
+        <div class="out4" style="background: #448d088a;width: 100%;height: 40%;padding: 5px;">
+          <h3 style="margin-bottom: 1px;color: rgb(255,255,255);">Buddha Great</h3>
+          <p style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</p>
+          <p style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong>897466</p>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+  </div>
+  <div class="d-flex" style="background: #f3f0f000;width: 100%;margin-bottom: 0.5%;">
+      <div  class=" main5 d-flex align-items-xl-end" style="background: url('./images/photo-1599895049867-bf329e4f8b54.jpg');width:272px;height: 400px;margin-left: 5px;;background-size: 100% 400px;">
+        <div class="out5" style="background: #1d1c1c75;width: 100%;height: 40%;padding: 5px;">
+          <h3 style="margin-bottom: 1px;color: rgb(255,255,255);">Ruben Dario en managua</h3>
+          <p style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</p>
+          <p style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong>125649</p>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+      <div class=" main6 d-flex align-items-xl-end"  style="background: url('./images/photo-1570556979571-aa4c0c3fab40.jpg');width:272px;height: 400px;margin-left: 5px;;background-size: 100% 400px;">
+        <div class="out6" style="background: #86868675;width: 100%;height: 40%;padding: 5px;">
+          <h3 style="margin-bottom: 1px;color: rgb(255,255,255);">Padrao dos Descobrimentos</h3>
+          <p style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</p>
+          <p style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong> 69746</p>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+      <div class="d-table-row" style="background: rgba(255, 255, 255, 0);width: 549px;height: 400px;margin-left: 5px;">
+          <div class=" main7 d-flex align-items-xl-end"  style="background: url('./images/xparis_eiffeltower_ssk500.jpeg.pagespeed.ic.03Zne2dW2F.jpg');height: 195px;;background-size: 100% 195px;">
+            <div class="out7" style="background: #2189cf75;width: 100%;height: 40%;padding: 5px;">
+              <h5 style="margin-bottom: 1px;color: rgb(255,255,255);">Eiffel tower</h5>
+              <span style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</span>
+              <span style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong>  59416</span>
+              <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+            </div></div>
+          <div  class=" main8 d-flex align-items-xl-end" style="background: url('./images/photo-1512495039889-52a3b799c9bc.jpg');height: 199px;margin-top: 0.5%;;background-size: 100% 195px;">
+            <div class="out8" style="background: #05040475;width: 100%;height: 40%;padding: 5px;">
+              <h5 style="margin-bottom: 1px;color: rgb(255,255,255);">Great pisa</h5>
+              <span style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</span>
+              <span style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong> 69746</span>
+              <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+            </div></div>
+      </div>
+  </div>
+  <div class="d-flex" style="background: #f3f0f000;width: 100%; height: 195px;">
+      <div  class=" main9 d-flex align-items-xl-end" style="background: url('./images/photo-1576138443223-d18e8c18fdb3.jpg');width: 50%;height: 195px;margin-left: 5px;;background-size: 100% 195px;">
+        <div class="out9" style="background: #92929275;width: 100%;height: 40%;padding: 5px;">
+          <h5 style="margin-bottom: 1px;color: rgb(255,255,255);">Running Status</h5>
+          <span style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</span>
+          <span style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong> 69746</span>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+      <div class=" main10 d-flex align-items-xl-end"  style="background: url('./images/download.jpg');width: 50%;height: 195px;margin-left: 5px;background-size: 100% 195px;">
+        <div class="out10" style="background: #c7840875;width: 100%;height: 40%;padding: 5px;">
+          <h5 style="margin-bottom: 1px;color: rgb(255,255,255);">Santorini</h5>
+          <span style="margin-bottom: 5px;color: rgb(255,255,255);">Economy form</span>
+          <span style="margin-left: 0px;margin-bottom: 2px;color: rgb(255,255,255);"><strong>INR</strong>561598</span>
+          <button class="btn btn-light float-right rounded-0" type="button" style="background: rgba(56,105,126,0.05);padding: 0px;font-size: 22px;margin-top: 7px;padding-top: 0px;padding-right: 10px;padding-left: 10px;padding-bottom: 2px;color: rgb(252,252,252);">Book now</button>
+        </div></div>
+  </div>
 </div>
-<!-- top location india -->
-<div id="india">
-    
+<button id="but1">Show more</button>
+
+<div class="container" style="margin-left: 13%;margin-top: 3%;width: 1140px;">
+  <h1>Great reasons to book at AirIndia.in</h1>
+  <div class="d-flex">
+      <div class="main11 d-xl-flex align-items-xl-end" style="height: 250px;background: url('./images/pic1.png'), #d04040;width: 33.33%;margin: 4px;background-size: 100% 100%;">
+          <div class="out11" style="width: 100%;height: 30%;background:  rgba(105, 8, 8, 0.637);">
+              <p style="margin-bottom: 3px;margin-left: 5px;color: #ffffff;">Book anytime, anywhere</p>
+              <button id="but">Learn more</button>
 </div>
-<!-- reasons to book -->
-<div id="reasons">
-    
+      </div>
+      <div class="main12 d-xl-flex align-items-xl-end" style="height: 250px;background: url('./images/pic2.png'), #d04040;width: 33.33%;margin: 4px;background-size: 100% 100%">
+          <div class="out12" style="width: 100%;height: 30%;background: rgba(105, 8, 8, 0.637);">
+              <p style="margin-bottom: 3px;margin-left: 5px;color: #ffffff;">Book anytime, anywhere</p>
+              <button id="but">Learn more</button>
+</div>
+      </div>
+      <div class="main13 d-xl-flex align-items-xl-end" style="height: 250px;background: url('./images/pic3.png'), #d04040;width: 33.33%;margin: 4px;background-size: 100% 100%">
+          <div class="out13"style="width: 100%;height: 30%;background:  rgba(105, 8, 8, 0.637);">
+              <p style="margin-bottom: 3px;margin-left: 5px;color: #ffffff;">Book anytime, anywhere</p>
+              <button id="but">Learn more</button>
+</div>
+      </div>
+      <div class="main14 d-xl-flex align-items-xl-end" style="height: 250px;background: url('./images/pic4.png'), #d04040;width: 33.33%;margin: 4px;background-size: 100% 100%">
+          <div class="out14" style="width: 100%;height: 30%;background: rgba(105, 8, 8, 0.637);">
+              <p style="margin-bottom: 3px;margin-left: 5px;color: #ffffff;">Book anytime, anywhere</p><button id="but">Learn more</button>
+</div>
+      </div>
+  </div>
 </div>
 <!-- prometion -->
-<div id="promotion">
-    
+<div class="container d-flex" style="margin-left: 13%;margin-top: 3%;">
+  <div style="width: 50%;height: 20px;background: #5B2637;padding: 11px;color: rgb(255,255,255);">
+      <p style="margin-bottom: 13px;font-size: 26px;">Together we, go further</p>
+      <p>Explore more of the world through seamless connections with our partners and travel further within our extended network.<br /></p>
+      <button id="but">Book Now</button>
+  </div>
+  <div style="width: 50%;height: 228px;background: url('./images/landmarks-worldwide-t.jpg'), #861818;padding: 11px;color: rgb(255,255,255);background-size: 100% 100%">
+  </div>
 </div>
 <!-- newsletter -->
 <div id="newsletter">
@@ -179,6 +287,7 @@
     function myFunction() {
         preloder.style.display="none";
     }
+
 </script>
 </body>
 </html>
