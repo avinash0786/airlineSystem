@@ -32,6 +32,10 @@ label{
 .myform{
     font-size: 1.4rem;
 }
+.icon-hover:hover{
+    border-color: rgb(138,138,138);
+}
+
 #but1{
     background: #ffffff;
     border: 2px solid black;
