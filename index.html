@@ -33,6 +33,7 @@
                 <li class="nav-item"><a class="nav-link active" href="./views/locations.html">Discover</a></li>
                 <li class="nav-item"><a class="nav-link" href="./views/ticket.html">Book </a></li>
                 <li class="nav-item"><a class="nav-link" href="./views/bookings.html">Journey</a></li>
+                <li class="nav-item"><a class="nav-link" href="./views/boarding.html">Boarding Pass</a></li>
                 <li class="nav-item dropdown"><a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" href="#">Account</a>
                     <div class="dropdown-menu"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Transactions</a><a class="dropdown-item" href="#">Third Item</a></div>
                 </li>
@@ -238,7 +239,7 @@
         </div></div>
   </div>
 </div>
-<button id="but1">Show more</button>
+<a id="but1" class="btn btn-primary" role="button" href="./views/locations.html">Show More</a>
 
 <div class="container" style="margin-left: 13%;margin-top: 3%;width: 1140px;">
   <h1>Great reasons to book at AirIndia.in</h1>
@@ -283,9 +284,48 @@
     
 </div>
 <!-- footer -->
-<div itemref="footer">
-    
-</div>
+<footer class="footer" style="background-color: aliceblue;">
+  <div class="container" >
+      <div class="row">             
+          <div class="col-5 offset-1 col-sm-2">
+              <h5>Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="./aboutus.html">About</a></li>
+                  <li><a href="./contactus.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-6 col-sm-5"> 
+              <h5>Our Address</h5>
+              <address>
+                Air India Corporate Office<br>
+                Phagwara, Punjab<br>
+                India<br>
+                <i class="fa fa-phone fa-lg"></i>: +91 45678913<br>
+                <i class="fa fa-fax fa-lg"></i>: +91 445577521<br>
+                <i class="fa fa-envelope fa-lg"></i>: 
+                <a href="mailto:renting.system@gmail.com">airIndia@help</a>
+             </address>
+          </div>
+          <div class="col col-sm-4 align-self-center">
+              <div style="text-align:center">
+                  <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                  <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                  <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                  <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+              </div>
+          </div>
+     </div>
+     <div class="row justify-content-center">             
+          <div class="col-auto">
+              <p>© Copyright 2020 Air India</p>
+          </div>
+     </div>
+  </div>
+</footer>
+
 
 <script>
     var preloder=document.getElementById("loading");
